@@ -1,0 +1,1503 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Bombastic Candies — dulces deliciosamente explosivos. Compra en línea y recoge en sucursal.">
+
+    <title>Bombastic Candies | Deliciosamente explosivo</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Chewy&family=DM+Serif+Display:ital@0;1&family=Quicksand:wght@400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <!-- TOAST -->
+    <div id="toastContainer" class="toast-container"></div>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="site-header">
+
+        <a href="#inicio" class="brand" aria-label="Bombastic Candies, inicio">
+
+            <span class="brand-logo">
+                <img src="images/logo.png"
+                     alt="Logo Bombastic Candies">
+            </span>
+
+            <span class="brand-name">
+                Bombastic candies
+            </span>
+
+        </a>
+
+        <nav class="main-nav" id="mainNav">
+
+            <a href="#inicio">Inicio</a>
+            <a href="#productos">Productos</a>
+            <a href="#nosotros">Nosotros</a>
+            <a href="#contacto">Contacto</a>
+
+        </nav>
+
+        <div class="header-actions">
+
+            <!-- BUSCAR -->
+            <button class="icon-btn"
+                    id="searchBtn"
+                    aria-label="Buscar productos"
+                    title="Buscar">
+                <svg viewBox="0 0 24 24">
+                    <circle cx="11" cy="11" r="6.8"></circle>
+                    <path d="m16 16 5 5"></path>
+                </svg>
+            </button>
+
+            <!-- CUENTA -->
+            <button class="icon-btn"
+                    id="accountBtn"
+                    aria-label="Mi cuenta"
+                    title="Mi cuenta">
+                <svg viewBox="0 0 24 24">
+                    <circle cx="12" cy="8" r="4"></circle>
+                    <path d="M4.5 21c.8-4.1 3.3-6.2 7.5-6.2s6.7 2.1 7.5 6.2"></path>
+                </svg>
+            </button>
+
+            <!-- CARRITO -->
+            <button class="cart-btn"
+                    id="cartBtn"
+                    aria-label="Abrir carrito">
+                <svg viewBox="0 0 24 24">
+                    <path d="M3 4h2l1.7 10.2a2 2 0 0 0 2 1.7h8.9a2 2 0 0 0 1.9-1.4L21 8H7"></path>
+                    <circle cx="10" cy="20" r="1.4"></circle>
+                    <circle cx="18" cy="20" r="1.4"></circle>
+                </svg>
+
+                <span>Carrito</span>
+
+                <b id="cartCount">0</b>
+            </button>
+
+            <!-- MENU MOVIL -->
+            <button class="menu-btn"
+                    id="menuBtn"
+                    aria-label="Abrir menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= CONTENIDO ================= -->
+
+    <main>
+
+        <!-- ==================================================
+             HERO
+             ================================================== -->
+
+        <section class="hero" id="inicio">
+
+            <div class="hero-slider" id="heroSlider">
+
+
+                <!-- ================= HERO 1 ================= -->
+
+                <article class="hero-slide active"
+                         style="
+            background-image:
+              linear-gradient(
+                90deg,
+                rgba(255,255,255,.94) 0%,
+                rgba(255,245,248,.75) 37%,
+                rgba(255,255,255,0) 70%
+              ),
+              url('images/hero-1.jpg');
+          ">
+
+                    <div class="hero-content">
+
+                        <p class="eyebrow">
+                            DESDE 2026 · UNA AVENTURA CON CADA DULCE
+                        </p>
+
+                        <h1>
+                            Explosivamente<br>
+                            <em>deliciosos</em>
+                        </h1>
+
+                        <p class="hero-copy">
+                            Dulces que convierten cualquier momento en una experiencia
+                            llena de color, sabor y magia.
+                        </p>
+
+                        <a href="#productos"
+                           class="primary-btn">
+                            Comprar ahora
+                            <span>→</span>
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- ================= HERO 2 ================= -->
+
+                <article class="hero-slide"
+                         style="
+            background-image:
+              linear-gradient(
+                90deg,
+                rgba(255,255,255,.94) 0%,
+                rgba(255,245,248,.75) 37%,
+                rgba(255,255,255,0) 70%
+              ),
+              url('images/hero-2.jpg');
+          ">
+
+                    <div class="hero-content">
+
+                        <p class="eyebrow">
+                            SABORES ÚNICOS · PRESENTACIONES TEMÁTICAS
+                        </p>
+
+                        <h1>
+                            Una aventura<br>
+                            <em>con cada dulce</em>
+                        </h1>
+
+                        <p class="hero-copy">
+                            Descubre nuestras creaciones y arma tu pedido
+                            para recogerlo en sucursal.
+                        </p>
+
+                        <a href="#productos"
+                           class="primary-btn">
+                            Ver productos
+                            <span>→</span>
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- ================= HERO 3 ================= -->
+
+                <article class="hero-slide"
+                         style="
+            background-image:
+              linear-gradient(
+                90deg,
+                rgba(255,255,255,.94) 0%,
+                rgba(255,245,248,.75) 37%,
+                rgba(255,255,255,0) 70%
+              ),
+              url('images/hero-3.jpg');
+          ">
+
+                    <div class="hero-content">
+
+                        <p class="eyebrow">
+                            BOMBÓN · GOMITAS · PALETAS · CHOCOLATE
+                        </p>
+
+                        <h1>
+                            Tu antojo<br>
+                            <em>tiene magia</em>
+                        </h1>
+
+                        <p class="hero-copy">
+                            Compra en línea, paga de forma simulada y recibe
+                            tu ticket digital para recoger.
+                        </p>
+
+                        <a href="#productos"
+                           class="primary-btn">
+                            Elegir dulces
+                            <span>→</span>
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+
+            <!-- INDICADORES -->
+            <div class="hero-dots"
+                 id="heroDots"
+                 aria-label="Selector de diapositivas"></div>
+
+
+            <!-- DULCES FLOTANTES -->
+            <div class="floating-candy candy-a">🍬</div>
+            <div class="floating-candy candy-b">🍭</div>
+            <div class="floating-candy candy-c">🍓</div>
+
+        </section>
+
+
+        <!-- ==================================================
+             PRODUCTOS
+             ================================================== -->
+
+        <section class="section products-section"
+                 id="productos">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <p class="eyebrow">
+                        SECCIÓN #2 · NUESTROS FAVORITOS
+                    </p>
+
+                    <h2>
+                        Productos
+                    </h2>
+
+                </div>
+
+                <button class="soft-btn"
+                        id="viewAllBtn">
+                    Ver todos
+                    <span>→</span>
+                </button>
+
+            </div>
+
+
+            <div class="filter-row">
+
+                <div class="category-pills">
+
+                    <button class="pill active"
+                            data-category="Todos">
+                        Todos
+                    </button>
+
+                    <button class="pill"
+                            data-category="Chocolate">
+                        Chocolate
+                    </button>
+
+                    <button class="pill"
+                            data-category="Gomitas">
+                        Gomitas
+                    </button>
+
+                    <button class="pill"
+                            data-category="Paletas">
+                        Paletas
+                    </button>
+
+                    <button class="pill"
+                            data-category="Bombones">
+                        Bombones
+                    </button>
+
+                </div>
+
+
+                <div class="search-box">
+
+                    <svg viewBox="0 0 24 24">
+                        <circle cx="11" cy="11" r="6.8"></circle>
+                        <path d="m16 16 5 5"></path>
+                    </svg>
+
+                    <input id="productSearch"
+                           type="search"
+                           placeholder="Buscar un dulce..."
+                           aria-label="Buscar un dulce">
+
+                </div>
+
+            </div>
+
+
+            <div class="product-grid"
+                 id="productGrid"></div>
+
+        </section>
+
+
+        <!-- ==================================================
+             NOSOTROS
+             ================================================== -->
+
+        <section class="story-section"
+                 id="nosotros">
+
+            <div class="story-image image-frame"
+                 style="background-image:url('images/about.jpg')">
+
+                <span class="image-hint">
+                    Agrega tu imagen en
+                    <b>images/about.jpg</b>
+                </span>
+
+            </div>
+
+
+            <div class="story-copy">
+
+                <p class="eyebrow">
+                    BOMBASTIC CANDIES · DESDE 2026
+                </p>
+
+                <h2>
+                    Una aventura<br>
+                    <em>con cada dulce</em>
+                </h2>
+
+                <p>
+                    En Bombastic Candies creemos que un dulce puede ser
+                    mucho más que un simple alimento: puede convertirse
+                    en una experiencia.
+                </p>
+
+                <p>
+                    Nuestro enfoque es ofrecer productos con sabores
+                    originales, una presentación atractiva y una experiencia
+                    de consumo que sorprenda y emocione a nuestros clientes.
+                </p>
+
+
+                <div class="story-stats">
+
+                    <div>
+                        <strong>01</strong>
+                        <span>Sabores únicos</span>
+                    </div>
+
+                    <div>
+                        <strong>02</strong>
+                        <span>Diseños temáticos</span>
+                    </div>
+
+                    <div>
+                        <strong>03</strong>
+                        <span>Experiencias dulces</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================================================
+             MISION / VISION
+             ================================================== -->
+
+        <section class="mission-section">
+
+            <div class="mission-card">
+
+                <span class="card-number">
+                    01
+                </span>
+
+                <p class="eyebrow">
+                    MISIÓN
+                </p>
+
+                <h3>
+                    Crear experiencias inolvidables
+                </h3>
+
+                <p>
+                    Crear experiencias inolvidables a través de dulces
+                    innovadores, combinando sabores únicos, creatividad
+                    y presentaciones temáticas que llenen de color y
+                    diversión cada momento.
+                </p>
+
+            </div>
+
+
+            <div class="mission-card accent">
+
+                <span class="card-number">
+                    02
+                </span>
+
+                <p class="eyebrow">
+                    VISIÓN
+                </p>
+
+                <h3>
+                    Revolucionar la forma de disfrutar los dulces
+                </h3>
+
+                <p>
+                    Ser una marca reconocida a nivel nacional por
+                    revolucionar la forma de disfrutar los dulces,
+                    destacando por nuestra innovación, calidad y
+                    capacidad para sorprender.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================================================
+             COMPRA Y RECOGE
+             ================================================== -->
+
+        <section class="pickup-section">
+
+            <div>
+
+                <p class="eyebrow">
+                    COMPRA EN LÍNEA · RECOGE EN SUCURSAL
+                </p>
+
+                <h2>
+                    Tu pedido listo<br>
+                    <em>cuando tú llegues.</em>
+                </h2>
+
+                <p>
+                    Selecciona una sucursal y horario durante el checkout.
+                    Al finalizar recibirás un ticket digital con tu número
+                    de pedido.
+                </p>
+
+            </div>
+
+
+            <div class="pickup-steps">
+
+                <div class="pickup-step">
+
+                    <span>1</span>
+
+                    <b>
+                        Elige
+                    </b>
+
+                    <small>
+                        tus dulces
+                    </small>
+
+                </div>
+
+
+                <div class="pickup-line"></div>
+
+
+                <div class="pickup-step">
+
+                    <span>2</span>
+
+                    <b>
+                        Paga
+                    </b>
+
+                    <small>
+                        en línea (demo)
+                    </small>
+
+                </div>
+
+
+                <div class="pickup-line"></div>
+
+
+                <div class="pickup-step">
+
+                    <span>3</span>
+
+                    <b>
+                        Recoge
+                    </b>
+
+                    <small>
+                        en caja
+                    </small>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================================================
+             CONTACTO
+             ================================================== -->
+
+        <section class="contact-section"
+                 id="contacto">
+
+            <div class="contact-banner"
+                 style="background-image:url('images/contact-bg.jpg')">
+
+                <div class="contact-banner-overlay">
+
+                    <div>
+
+                        <p class="eyebrow">
+                            NO TE PIERDAS DE EVENTOS NI PROMOCIONES
+                        </p>
+
+                        <h2>
+                            Sigamos conectados.
+                        </h2>
+
+                    </div>
+
+
+                    <div class="socials">
+
+                        <a href="#"
+                           aria-label="TikTok">
+                            ♪
+                        </a>
+
+                        <a href="#"
+                           aria-label="Facebook">
+                            f
+                        </a>
+
+                        <a href="#"
+                           aria-label="Instagram">
+                            ◎
+                        </a>
+
+                        <a href="#"
+                           aria-label="X">
+                            𝕏
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="contact-grid">
+
+                <div>
+
+                    <p class="eyebrow">
+                        NÚMEROS
+                    </p>
+
+                    <a href="tel:+526642483199">
+                        (664) 248 3199
+                    </a>
+
+                    <a href="tel:+526193679907">
+                        (619) 367 9907
+                    </a>
+
+                </div>
+
+
+                <div>
+
+                    <p class="eyebrow">
+                        CORREO
+                    </p>
+
+                    <a href="mailto:bombasticcandies@gmail.com">
+                        bombasticcandies@gmail.com
+                    </a>
+
+                </div>
+
+
+                <div>
+
+                    <p class="eyebrow">
+                        SUCURSAL
+                    </p>
+
+                    <p>
+                        Avenida Roble #331
+                    </p>
+
+                    <small>
+                        Tijuana, Baja California
+                    </small>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ==================================================
+         FOOTER
+         ================================================== -->
+
+    <footer>
+
+        <div class="footer-brand">
+            Bombastic candies
+        </div>
+
+        <p>
+            Deliciosamente explosivo · Todos los derechos reservados.
+        </p>
+
+        <a href="#inicio">
+            Volver arriba ↑
+        </a>
+
+    </footer>
+
+
+    <!-- ==================================================
+         MODAL BUSQUEDA
+         ================================================== -->
+
+    <div class="modal"
+         id="searchModal"
+         aria-hidden="true">
+
+        <div class="modal-card search-modal-card">
+
+            <button class="close-btn"
+                    data-close="searchModal">
+                ×
+            </button>
+
+            <p class="eyebrow">
+                BUSCAR
+            </p>
+
+            <h2>
+                ¿Qué se te antoja?
+            </h2>
+
+            <div class="big-search">
+
+                <svg viewBox="0 0 24 24">
+                    <circle cx="11" cy="11" r="6.8"></circle>
+                    <path d="m16 16 5 5"></path>
+                </svg>
+
+                <input id="globalSearch"
+                       type="search"
+                       placeholder="Chocolate, gomitas, paletas...">
+
+            </div>
+
+            <div id="searchResults"
+                 class="search-results"></div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ==================================================
+         MODAL CUENTA
+         ================================================== -->
+
+    <div class="modal"
+         id="accountModal"
+         aria-hidden="true">
+
+        <div class="modal-card account-card">
+
+            <button class="close-btn"
+                    data-close="accountModal">
+                ×
+            </button>
+
+            <div class="account-icon">
+                ♡
+            </div>
+
+            <p class="eyebrow">
+                MI CUENTA
+            </p>
+
+            <h2>
+                Bienvenido a Bombastic
+            </h2>
+
+            <p class="muted">
+                Demo académica: tus datos no se envían a ningún servidor.
+            </p>
+
+            <form id="accountForm">
+
+                <label>
+                    Nombre
+                    <input name="name"
+                           required
+                           placeholder="Tu nombre">
+                </label>
+
+                <label>
+                    Correo
+                    <input name="email"
+                           type="email"
+                           required
+                           placeholder="correo@ejemplo.com">
+                </label>
+
+                <button class="primary-btn full"
+                        type="submit">
+                    Continuar
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+    <!-- ==================================================
+         DETALLE PRODUCTO
+         ================================================== -->
+
+    <div class="modal"
+         id="productModal"
+         aria-hidden="true">
+
+        <div class="modal-card product-detail-card">
+
+            <button class="close-btn"
+                    data-close="productModal">
+                ×
+            </button>
+
+            <div class="detail-layout">
+
+                <div id="detailImage"
+                     class="detail-image image-frame"></div>
+
+
+                <div>
+
+                    <span id="detailCategory"
+                          class="tag"></span>
+
+                    <h2 id="detailName"></h2>
+
+                    <p id="detailDescription"
+                       class="detail-description"></p>
+
+
+                    <div class="detail-bottom">
+
+                        <strong id="detailPrice"></strong>
+
+                        <div class="quantity-control">
+
+                            <button id="detailMinus">
+                                −
+                            </button>
+
+                            <span id="detailQty">
+                                1
+                            </span>
+
+                            <button id="detailPlus">
+                                +
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <button id="detailAdd"
+                            class="primary-btn full">
+                        Agregar al carrito
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ==================================================
+         CARRITO
+         ================================================== -->
+
+    <aside class="cart-drawer"
+           id="cartDrawer"
+           aria-hidden="true">
+
+        <div class="drawer-head">
+
+            <div>
+
+                <p class="eyebrow">
+                    TU SELECCIÓN
+                </p>
+
+                <h2>
+                    Carrito
+                </h2>
+
+            </div>
+
+            <button class="close-btn"
+                    id="closeCart">
+                ×
+            </button>
+
+        </div>
+
+
+        <div id="cartItems"
+             class="cart-items"></div>
+
+
+        <div class="cart-footer">
+
+            <div class="subtotal-row">
+                <span>Subtotal</span>
+                <strong id="cartSubtotal">$0.00</strong>
+            </div>
+
+            <div class="subtotal-row">
+                <span>Impuestos</span>
+                <span id="cartTax">$0.00</span>
+            </div>
+
+            <div class="total-row">
+                <span>Total</span>
+                <strong id="cartTotal">$0.00</strong>
+            </div>
+
+            <button id="checkoutBtn"
+                    class="primary-btn full">
+                Continuar al pago
+                <span>→</span>
+            </button>
+
+            <button id="clearCartBtn"
+                    class="text-btn">
+                Vaciar carrito
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <div class="drawer-backdrop"
+         id="drawerBackdrop"></div>
+
+
+    <!-- ==================================================
+         CHECKOUT
+         ================================================== -->
+
+    <div class="modal"
+         id="checkoutModal"
+         aria-hidden="true">
+
+        <div class="modal-card checkout-card">
+
+            <button class="close-btn"
+                    data-close="checkoutModal">
+                ×
+            </button>
+
+
+            <div class="checkout-header">
+
+                <div>
+
+                    <p class="eyebrow">
+                        CHECKOUT · DEMOSTRACIÓN
+                    </p>
+
+                    <h2>
+                        Finaliza tu pedido
+                    </h2>
+
+                </div>
+
+                <div class="secure-demo">
+                    🔒 MODO DEMO
+                </div>
+
+            </div>
+
+
+            <div class="checkout-grid">
+
+
+                <!-- FORMULARIO -->
+
+                <form id="checkoutForm"
+                      class="checkout-form">
+
+
+                    <!-- DATOS CLIENTE -->
+
+                    <section>
+
+                        <div class="step-title">
+
+                            <span>1</span>
+
+                            <h3>
+                                Datos del cliente
+                            </h3>
+
+                        </div>
+
+
+                        <div class="two-cols">
+
+                            <label>
+                                Nombre completo
+
+                                <input name="customerName"
+                                       required
+                                       placeholder="Fernando López">
+
+                            </label>
+
+
+                            <label>
+                                Correo electrónico
+
+                                <input name="customerEmail"
+                                       type="email"
+                                       required
+                                       placeholder="correo@ejemplo.com">
+
+                            </label>
+
+                        </div>
+
+                    </section>
+
+
+                    <!-- RECOGIDA -->
+
+                    <section>
+
+                        <div class="step-title">
+
+                            <span>2</span>
+
+                            <h3>
+                                Recogida
+                            </h3>
+
+                        </div>
+
+
+                        <div class="two-cols">
+
+                            <label>
+                                Sucursal
+
+                                <select name="branch"
+                                        required>
+
+                                    <option value="Avenida Roble #331">
+                                        Avenida Roble #331
+                                    </option>
+
+                                    <option value="Zona Río">
+                                        Zona Río
+                                    </option>
+
+                                    <option value="Playas de Tijuana">
+                                        Playas de Tijuana
+                                    </option>
+
+                                </select>
+
+                            </label>
+
+
+                            <label>
+                                Horario
+
+                                <select name="pickupTime"
+                                        required>
+
+                                    <option value="12:00 - 12:30">
+                                        12:00 - 12:30
+                                    </option>
+
+                                    <option value="13:00 - 13:30">
+                                        13:00 - 13:30
+                                    </option>
+
+                                    <option value="14:00 - 14:30">
+                                        14:00 - 14:30
+                                    </option>
+
+                                    <option value="16:00 - 16:30">
+                                        16:00 - 16:30
+                                    </option>
+
+                                    <option value="18:00 - 18:30">
+                                        18:00 - 18:30
+                                    </option>
+
+                                    <option value="19:00 - 19:30">
+                                        19:00 - 19:30
+                                    </option>
+
+                                </select>
+
+                            </label>
+
+                        </div>
+
+                    </section>
+
+
+                    <!-- PAGO -->
+
+                    <section>
+
+                        <div class="step-title">
+
+                            <span>3</span>
+
+                            <h3>
+                                Pago con tarjeta
+                                <small>
+                                    (simulado)
+                                </small>
+                            </h3>
+
+                        </div>
+
+
+                        <div class="demo-warning">
+
+                            Esta página es un proyecto escolar.
+                            Los datos de tarjeta se validan localmente y
+                            <b>no se envían ni se guardan</b>.
+                            No uses una tarjeta real.
+
+                        </div>
+
+
+                        <label>
+
+                            Número de tarjeta
+
+                            <input name="cardNumber"
+                                   id="cardNumber"
+                                   inputmode="numeric"
+                                   maxlength="19"
+                                   required
+                                   placeholder="4242 4242 4242 4242">
+
+                        </label>
+
+
+                        <div class="three-cols">
+
+                            <label>
+
+                                Vencimiento
+
+                                <input name="expiry"
+                                       id="expiry"
+                                       inputmode="numeric"
+                                       maxlength="5"
+                                       required
+                                       placeholder="MM/AA">
+
+                            </label>
+
+
+                            <label>
+
+                                CVV
+
+                                <input name="cvv"
+                                       id="cvv"
+                                       inputmode="numeric"
+                                       maxlength="4"
+                                       required
+                                       placeholder="123">
+
+                            </label>
+
+
+                            <label>
+
+                                Nombre en tarjeta
+
+                                <input name="cardName"
+                                       required
+                                       placeholder="NOMBRE APELLIDO">
+
+                            </label>
+
+                        </div>
+
+
+                        <p class="test-hint">
+
+                            Para la demostración puedes usar:
+
+                            <b>
+                                4242 4242 4242 4242
+                            </b>
+
+                            · 12/30 · 123
+
+                        </p>
+
+                    </section>
+
+
+                    <button class="primary-btn full checkout-submit"
+                            type="submit">
+                        Confirmar compra
+                        <span>✦</span>
+                    </button>
+
+                </form>
+
+
+                <!-- RESUMEN -->
+
+                <div class="checkout-summary">
+
+                    <p class="eyebrow">
+                        RESUMEN
+                    </p>
+
+                    <div id="checkoutItems"></div>
+
+                    <div class="summary-total">
+
+                        <span>
+                            Total
+                        </span>
+
+                        <strong id="checkoutTotal">
+                            $0.00
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ==================================================
+         PROCESANDO PAGO
+         ================================================== -->
+
+    <div class="processing-overlay"
+         id="processingOverlay"
+         aria-hidden="true">
+
+        <div class="processing-card">
+
+            <div class="spinner"></div>
+
+            <p class="eyebrow">
+                BOMBASTIC CANDIES
+            </p>
+
+            <h2>
+                Preparando tu pedido...
+            </h2>
+
+            <p>
+                Estamos simulando la autorización del pago.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- ==================================================
+         COMPRA COMPLETADA
+         ================================================== -->
+
+    <div class="modal"
+         id="successModal"
+         aria-hidden="true">
+
+        <div class="modal-card success-card">
+
+            <div class="success-burst">
+
+                <span>
+                    ✓
+                </span>
+
+            </div>
+
+
+            <div class="confetti"
+                 id="confetti"></div>
+
+
+            <p class="eyebrow">
+                ¡COMPRA COMPLETADA!
+            </p>
+
+            <h2>
+                Tu pedido está en camino a caja.
+            </h2>
+
+            <p>
+                Guarda tu ticket digital.
+                Lo necesitarás para recoger tu pedido
+                en la sucursal seleccionada.
+            </p>
+
+
+            <div class="order-number">
+
+                Pedido
+
+                <b id="successOrderNumber">
+                    BC-000000
+                </b>
+
+            </div>
+
+
+            <div class="success-actions">
+
+                <button id="viewTicketBtn"
+                        class="primary-btn">
+                    Ver ticket
+                    <span>→</span>
+                </button>
+
+                <button id="closeSuccessBtn"
+                        class="soft-btn">
+                    Seguir comprando
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ==================================================
+         TICKET
+         ================================================== -->
+
+    <div class="modal"
+         id="ticketModal"
+         aria-hidden="true">
+
+        <div class="modal-card ticket-modal-card">
+
+            <button class="close-btn"
+                    data-close="ticketModal">
+                ×
+            </button>
+
+
+            <div class="ticket"
+                 id="ticket">
+
+                <div class="ticket-top">
+
+                    <div class="ticket-logo">
+                        BC
+                    </div>
+
+                    <div>
+
+                        <h2>
+                            Bombastic candies
+                        </h2>
+
+                        <span>
+                            Deliciosamente explosivo
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="ticket-divider"></div>
+
+
+                <div class="ticket-title">
+                    TICKET DE COMPRA
+                </div>
+
+
+                <div class="ticket-code"
+                     id="ticketCode">
+                    BC-000000
+                </div>
+
+
+                <div class="ticket-status">
+
+                    <span>
+                        ✓
+                    </span>
+
+                    PAGO SIMULADO APROBADO
+
+                </div>
+
+
+                <div class="ticket-info">
+
+                    <div>
+
+                        <span>
+                            Cliente
+                        </span>
+
+                        <b id="ticketCustomer">
+                            —
+                        </b>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>
+                            Correo
+                        </span>
+
+                        <b id="ticketEmail">
+                            —
+                        </b>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>
+                            Sucursal
+                        </span>
+
+                        <b id="ticketBranch">
+                            —
+                        </b>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>
+                            Recogida
+                        </span>
+
+                        <b id="ticketPickup">
+                            —
+                        </b>
+
+                    </div>
+
+                </div>
+
+
+                <div id="ticketItems"
+                     class="ticket-items"></div>
+
+
+                <div class="ticket-total">
+
+                    <span>
+                        Total
+                    </span>
+
+                    <strong id="ticketTotal">
+                        $0.00
+                    </strong>
+
+                </div>
+
+
+                <div class="ticket-barcode"
+                     id="ticketBarcode"></div>
+
+
+                <p class="ticket-note">
+
+                    Presenta este ticket en caja.
+                    Este comprobante corresponde a una simulación
+                    académica y no representa un cobro real.
+
+                </p>
+
+            </div>
+
+
+            <div class="ticket-actions">
+
+                <button id="printTicketBtn"
+                        class="primary-btn">
+                    🖨 Imprimir / Guardar PDF
+                </button>
+
+                <button class="soft-btn"
+                        data-close="ticketModal">
+                    Cerrar
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="js/app.js"></script>
+
+</body>
+</html>
